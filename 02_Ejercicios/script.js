@@ -41,6 +41,7 @@ let num1 = parseInt(prompt("Ingresa el 1er valor: "));
     let direccion = prompt("Ingresa la dirección:");
     let numero_casa = prompt("Ingresa el número de casa:");
     let mensaje = "La dirección es " + direccion + " y el número de casa es " + numero_casa;
-    alert("Longitud del mensaje: " + mensaje.length);
-    alert("Antepenúltimo carácter del mensaje: " + mensaje[mensaje.length - 3]);
+    let longitudMensaje = "Longitud del mensaje: " + mensaje.length;
+    let antepenultimoCaracter = "Antepenúltimo carácter del mensaje: " + mensaje[mensaje.length - 3];
+    alert(mensaje + "\n" + longitudMensaje + "\n" + antepenultimoCaracter);
     }
