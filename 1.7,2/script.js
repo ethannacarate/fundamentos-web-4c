@@ -1,4 +1,4 @@
-// 1. Tabla de multiplicar personalizada
+// Tabla de multiplicar personalizada
 function tablaDeMultiplicar() {
     // Solicita al usuario un número
     let numero = parseInt(prompt("Ingresa un número para generar su tabla de multiplicar:"));
@@ -13,7 +13,7 @@ function tablaDeMultiplicar() {
     alert(resultado);
 }
 
-// 2. Sumar N números ingresados por el usuario
+// Sumar N números ingresados por el usuario
 function sumarNumeros() {
     // Solicita al usuario cuántos números desea sumar
     let cantidad = parseInt(prompt("¿Cuántos números deseas sumar?"));
@@ -29,7 +29,7 @@ function sumarNumeros() {
     alert("La suma total es: " + suma);
 }
 
-// 3. Mostrar los números pares entre dos valores dados
+// Mostrar los números pares entre dos valores dados
 function mostrarNumerosPares() {
     // Solicita al usuario el número inicial y final
     let inicio = parseInt(prompt("Ingresa el número inicial:"));
