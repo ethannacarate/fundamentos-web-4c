@@ -34,15 +34,17 @@ function mostrarNumerosPares() {
     // Solicita al usuario el número inicial y final
     let inicio = parseInt(prompt("Ingresa el número inicial:"));
     let fin = parseInt(prompt("Ingresa el número final:"));
+    let cantidad = parseInt(prompt("¿Cuántos números pares deseas obtener?")); // Solicita la cantidad de números pares
     let pares = []; // Arreglo para almacenar los números pares
 
     // Encuentra los números pares entre el rango dado
     for (let i = inicio; i <= fin; i++) {
         if (i % 2 === 0) { // Verifica si el número es par
             pares.push(i); // Agrega el número par al arreglo
+            if (pares.length === cantidad) break; // Detiene el bucle después de encontrar la cantidad deseada
         }
     }
 
-    // Muestra los números pares en una alerta
+    // Muestra los números pares solicitados en una alerta
     alert("Números pares entre " + inicio + " y " + fin + ": " + pares.join(", "));
 }
