@@ -37,7 +37,7 @@ function sumarPrimerosN() {
     let n = parseInt(prompt("Ingresa un número (n):"));
     let suma = 0; // Variable para almacenar la suma
 
-    // Bucle que suma los números del 1 hasta n
+    // Bucle que suma los números del 1 hasta n   
     for (let i = 1; i <= n; i++) {
         suma += i;
     }
