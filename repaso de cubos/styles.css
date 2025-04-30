@@ -1,7 +1,13 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(ffffff);
 }
 
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
 .container {
     padding: 10px;
     margin: auto;
@@ -9,24 +15,30 @@ body {
     height: auto;
     justify-content: space-between;
     display: flexbox;
-    background-color: rgb(41, 212, 212);
+    background-color: rgb(ffffff);
 }
 
 .row {
-    margin: 5px;
+    margin: 15px;
     display: flexbox;
-    background-color: rgb(57, 69, 240);
+    background-color:#59C6ED;
     width: 790px;
     height: 225.5px;
 }
-
+.row2{
+    margin: 15px;
+    display: flexbox;
+    background-color:#ffffff;
+    width: 790px;
+    height: 225.5px;
+}
 img {
     margin-inline: 30px;
     margin-top: 12px;
     width: 200px;
     height: 200px;
     display: flexbox;
-    border-radius: 10px;
+  
 }
 
 #center {
@@ -34,5 +46,5 @@ img {
 }
 
 #beige {
-    background-color: rgb(201, 33, 33);
+    background-color: rgb(255, 159, 224);
 }
