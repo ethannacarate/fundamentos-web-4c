@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 3vh solid white;
+}
+
+body {
+    padding: 0 3vh;
+    outline: 3vh solid white;
+}
+
+div {
+    background-color: #B3B5B4;
+}
+
+.zona-superior,
+.zona-inferior,
+.seccion-izquierda,
+.seccion-derecha {
+    background-color: white;
+}
+
+.estructura {
+    display: flex;
+    height: 100vh;
+}
+
+.panel-izquierdo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.panel-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.zona-superior {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.grupo-a {
+    flex: 4;
+    padding-top: 3vh;
+}
+
+.bloque-a1 {
+    flex: 3;
+    height: 30vh;
+}
+
+.bloque-a2 {
+    flex: 4;
+    height: 20vh;
+    outline: none;
+}
+
+.grupo-b {
+    flex: 1;
+    padding-top: 3vh;
+}
+
+.unidad {
+    flex: 1;
+    width: 25vh;
+    height: 25vh;
+    outline: 1.5vh solid white;
+}
+
+.zona-inferior {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.barra-vertical {
+    flex: 1;
+    width: 10vh;
+    height: 47vh;
+}
+
+.grupo-c {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    height: 47vh;
+    margin-bottom: 3vh;
+}
+
+.barra-horizontal {
+    flex: 1;
+    width: 75vh;
+    height: 25vh;
+}
+
+.seccion-izquierda {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque-central {
+    flex: 1;
+    height: 50vh;
+    margin-top: 3vh;
+}
+
+.grupo-d {
+    display: flex;
+    flex-direction: row;
+}
+
+.barra-lateral {
+    outline: 2.5vh solid white;
+}
+
+.seccion-derecha {
+    flex: 2;
+}
+
+.modulo-pequeno {
+    flex: 1;
+    height: 27vh;
+    margin-top: 3vh;
+    outline: solid white;
+}
+
+.modulo-grande {
+    flex: 1;
+    height: 67vh;
+}
