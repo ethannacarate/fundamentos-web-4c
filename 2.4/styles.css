@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 3vh solid white;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,126 +14,140 @@ div {
     background-color: #B3B5B4;
 }
 
-.zona-superior,
-.zona-inferior,
-.seccion-izquierda,
-.seccion-derecha {
+.parte-arriba,
+.parte-abajo,
+.cacho-izq,
+.cacho-der {
     background-color: white;
 }
 
-.estructura {
+.contenedor-grande {
     display: flex;
     height: 100vh;
 }
 
-.panel-izquierdo {
+.lado-izquierdo {
     display: flex;
     flex: 1;
     flex-direction: column;
     height: 100vh;
 }
 
-.panel-derecho {
+.lado-derecho {
     flex: 1;
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
-.zona-superior {
+.parte-arriba {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     height: 50vh;
 }
 
-.grupo-a {
+.grupo-chido {
     flex: 4;
     padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
-.bloque-a1 {
+.cajita1 {
     flex: 3;
     height: 30vh;
 }
 
-.bloque-a2 {
+.cajita2 {
     flex: 4;
     height: 20vh;
     outline: none;
 }
 
-.grupo-b {
+.grupo-peque {
     flex: 1;
     padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
-.unidad {
+.cosita {
     flex: 1;
     width: 25vh;
     height: 25vh;
     outline: 1.5vh solid white;
 }
 
-.zona-inferior {
+.parte-abajo {
     display: flex;
     flex-wrap: wrap;
     height: 50vh;
 }
 
-.barra-vertical {
+.rayita-vertical {
     flex: 1;
     width: 10vh;
     height: 47vh;
 }
 
-.grupo-c {
+.combo-barras {
     flex: 2;
     display: flex;
     flex-direction: column;
     height: 47vh;
     margin-bottom: 3vh;
+    gap: 1vh;
 }
 
-.barra-horizontal {
+.rayita-horizontal {
     flex: 1;
     width: 75vh;
     height: 25vh;
 }
 
-.seccion-izquierda {
+.cacho-izq {
     flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.bloque-central {
+.bloque-grandote {
     flex: 1;
     height: 50vh;
     margin-top: 3vh;
 }
 
-.grupo-d {
+.grupo-final {
     display: flex;
     flex-direction: row;
+    gap: 1vh;
+    margin-top: 1vh;
 }
 
-.barra-lateral {
+.barra-gorda {
+    width: 10vh;
+    height: 25vh;
     outline: 2.5vh solid white;
 }
 
-.seccion-derecha {
+.cacho-der {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding-top: 3vh;
 }
 
-.modulo-pequeno {
+.caja-chica {
     flex: 1;
     height: 27vh;
-    margin-top: 3vh;
     outline: solid white;
 }
 
-.modulo-grande {
+.caja-grande {
     flex: 1;
     height: 67vh;
 }
