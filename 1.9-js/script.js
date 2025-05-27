@@ -15,4 +15,4 @@ console.log("Lista:", participantes.join(", "));
 
 if (participantes.length > 5) {
     console.log("¡Gran convocatoria! Hay más de 5 participantes.");
-}
+} 
