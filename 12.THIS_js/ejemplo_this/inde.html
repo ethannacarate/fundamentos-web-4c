@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+    <link rel="stylesheet" href="static/CSS/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Dojonary</h1>
+        <input type="text" placeholder="Search" id="search">
+        <button onclick="TurnOff(this)">Login</button>
+    </nav>
+    <main class="container-page">
+        <section class="left">
+            <section class="top card">
+                <div class="info-post">
+                    <h2>Ninja</h2>
+                    <h3>noun</h3>
+                    <p>Plural: ninjas</p>
+                    <button onclick="Like(this)" class="post-botton"><span id="like_container1">13 Like(s)</span></button>
+                </div>
+                <p>A practitioner skilled in the <a href="#">Japanase</a> art of <a href="#">ninjutsu</a></p>
+            </section>
+            <section class="bottom card">
+                <div class="info-post">
+                    <h2>Ninja</h2>
+                    <h3>noun</h3>
+                    <p>Plural: ninjas</p>
+                    <button onclick="Like_2(this)" class="post-botton"><span id="like_container2">37 Like(s)</span></button>
+                </div>
+                <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+            </section>
+        </section>
+        <section class="right">
+            <div class="definition">
+                <h2>Dojonary is defined by YOU</h2>
+                <button onclick="Hide(this)" class="a-definition">Add Definition</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/JS/script.js "></script>
+</body>
+</html>
