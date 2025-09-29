@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
 
@@ -51,8 +51,8 @@ main{
 .right{
     display: flex;
     flex: 3;
-    height: 17vh;
-    padding: 2vh 3vh;
+    height: 16.7vh;
+    padding: 2vh 4vh;
     justify-content: center;
     border: solid black 3px;
 }
