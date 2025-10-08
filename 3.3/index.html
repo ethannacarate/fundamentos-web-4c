@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button onclick="turnOff(this)" class="log">Login</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="col-l">
+
+            <!-- this is a placeholder replace it with a real video -->
+            <figure class="placeholder">
+                <video id="video_Main" loop controls src="resources/video/3191574-uhd_3840_2160_25fps.mp4" width="720" height="400" >
+            </video>
+            </figure>
+
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>Example Video Title</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="img/gratis-png-icono-de-perfil-icono-de-usuario-en-un-circulo.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Example User Name</span>
+                    </div>
+                </div>
+                <button class="btn">Subscribe</button>
+            </div>
+
+        </div>
+
+        <!-- right column -->
+        <div class="col-r">
+
+            <h3 class="sub-header">Up Next</h3>
+
+            <div class="video-small">
+                <video id="in" onclick="cambioVideo(this)" src="resources/video/2759484-uhd_3840_2160_30fps.mp4" onmouseover="this.play()" onmouseout="this.pause()" alt="video placeholder" loop class="vid-s"></video>
+                <span id="in" class="video-title">Relax 100%</span>
+            </div>
+
+            <div class="video-small">
+                <video id="in" onclick="cambioVideo(this)"src="resources/video/3191572-uhd_3840_2160_25fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()" loop class="vid-s"></video>
+                <span class="video-title">Adn girando</span>
+            </div>
+
+            <div class="video-small">
+                <video  id="in"onclick="cambioVideo(this)"src="resources/video/4878912-uhd_3840_2160_24fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()"  loop class="vid-s"></video>
+                <span class="video-title">   montaña</span>
+            </div>
+
+            <div class="video-small">
+                <video id="in" onclick="cambioVideo(this)"src="resources/video/856996-hd_1920_1080_24fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()" loop class="vid-s"></video>
+                <span class="video-title">Iso ulti</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html

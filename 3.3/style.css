@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 160vh;
+    width: 160vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.nav-container {
+    display: flex;
+    background-color: #333333;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+    box-shadow: #9900FF 0px -10px;
+    color: white;
+}
+
+.log {
+    border: black solid 1px;
+    color: white;
+    padding: 4px 18px;
+    cursor: pointer;
+    background-color: #9900FF;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: black 4px 4px;
+}
+
+.log:hover {
+    background-color: #4c067a;
+}
+
+.start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.vid-s {
+    height: 16vh;
+    width: 35vh;
+    margin: 2vh;
+}
+
+.video-small {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+}
+
+.search {
+    width: 110vh;
+    height: 4vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin: 3vh;
+    height: 3vh;
+    width: 10vh;
+    box-shadow: black 4px 4px;
+    background-color: #9900FF;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    border: black solid 1px;
+}
+
+.btn:hover {
+    background-color: #4c067a;
+    color: white;
+}
+
+.avatar-s{
+    height: 6vh;
+    margin-top: 2vh;
+}
+
+.user-name{
+    margin-top: 3.5vh;
+    color: #9900FF;
+    font-weight: bold;
+}
+
+.video-title{
+    margin-top: 6vh ;
+}
