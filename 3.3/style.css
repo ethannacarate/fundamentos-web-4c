@@ -11,33 +11,34 @@ body {
     width: 160vh;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    background-color: #f3f3f3;
+    background-color: #f7f7fa; /* un poco más claro */
+    font-size: 17px; /* +1px */
 }
 
 .nav-container {
     display: flex;
-    background-color: #333333;
+    background-color: #444444; /* un poco más claro */
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     margin-bottom: 4vh;
     margin-top: 1vh;
-    box-shadow: #9900FF 0px -10px;
+    box-shadow: #a366ff 0px -10px; /* un poco más claro */
     color: white;
 }
 
 .log {
-    border: black solid 1px;
+    border: #222 solid 1px; /* un poco más claro */
     color: white;
     padding: 4px 18px;
     cursor: pointer;
-    background-color: #9900FF;
+    background-color: #a366ff; /* un poco más claro */
     transition: transform 0.3s ease-in-out;
-    box-shadow: black 4px 4px;
+    box-shadow: #222 4px 4px; /* un poco más claro */
 }
 
 .log:hover {
-    background-color: #4c067a;
+    background-color: #5e1a8a; /* un poco más claro */
 }
 
 .start {
@@ -86,15 +87,15 @@ body {
     margin: 3vh;
     height: 3vh;
     width: 10vh;
-    box-shadow: black 4px 4px;
-    background-color: #9900FF;
+    box-shadow: #222 4px 4px; /* un poco más claro */
+    background-color: #a366ff; /* un poco más claro */
     color: white;
     transition: transform 0.3s ease-in-out;
-    border: black solid 1px;
+    border: #222 solid 1px; /* un poco más claro */
 }
 
 .btn:hover {
-    background-color: #4c067a;
+    background-color: #5e1a8a; /* un poco más claro */
     color: white;
 }
 
@@ -105,10 +106,12 @@ body {
 
 .user-name{
     margin-top: 3.5vh;
-    color: #9900FF;
+    color: #a366ff; /* un poco más claro */
     font-weight: bold;
+    font-size: 18px; /* +1px */
 }
 
 .video-title{
     margin-top: 6vh ;
+    font-size: 18px; /* +1px */
 }
