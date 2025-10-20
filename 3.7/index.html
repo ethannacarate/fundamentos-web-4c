@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+            <header>
+            <h1 class="logo">DojoWeather</h1>
+            <nav class="city-nav">
+                <a href="#" onclick="showCityLoading('Burbank')">Burbank</a>
+                <a href="#" onclick="showCityLoading('Chicago')">Chicago</a>
+                <a href="#" onclick="showCityLoading('Dallas')">Dallas</a>
+            </nav>
+        </header>
+
+    <div class="weather-app">
+        
+
+
+        <main>
+            
+            <div class="city-and-temp-row">
+                <h2 class="city-name">San Jose</h2>
+                <div class="temp-selector">
+                    <label>show temperature in</label>
+                    <select id="temp-unit" onchange="changeTempUnit(this)">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="forecast-cards" id="forecast-cards">
+                
+                <div class="card">
+                    <h3 class="card-title">Today</h3>
+                    <div class="weather-icon">
+                        <img src="img/some_rain.png" alt="some rain">
+                    </div>
+                    <p class="description">some rain</p>
+                    <div class="temperatures">
+                        <span class="temp-max" id="temp-max-0">24°</span>
+                        <span class="temp-min" id="temp-min-0">18°</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Tomorrow</h3>
+                    <div class="weather-icon">
+                        <img src="img/some_sun.png" alt="some sun">
+                    </div>
+                    <p class="description">some sun</p>
+                    <div class="temperatures">
+                        <span class="temp-max" id="temp-max-1">27°</span>
+                        <span class="temp-min" id="temp-min-1">19°</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Friday</h3>
+                    <div class="weather-icon">
+                        <img src="img/some_clouds.png" alt="some clouds">
+                    </div>
+                    <p class="description">some clouds</p>
+                    <div class="temperatures">
+                        <span class="temp-max" id="temp-max-2">21°</span>
+                        <span class="temp-min" id="temp-min-2">16°</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Saturday</h3>
+                    <div class="weather-icon">
+                        <img src="img/some_sun.png" alt="some sun">
+                    </div>
+                    <p class="description">some sun</p>
+                    <div class="temperatures">
+                        <span class="temp-max" id="temp-max-3">26°</span>
+                        <span class="temp-min" id="temp-min-3">21°</span>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="cookie-policy" id="cookie-policy">
+            <div class="cookie-content">
+                <img src="img/cookie.png" alt="Cookie Icon" class="cookie-icon"> 
+                <div class="text">
+                    <p><strong>Stop! Cookie time</strong></p>
+                    <p>We use cookies (mostly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+            </div>
+            <button class="btn-accept" onclick="dismissCookie()">I Accept</button>
+        </div>
+        
+    </div> <div class="modal" id="loading-modal">
+        <div class="modal-content">
+            <p>This page says</p>
+            <p id="loading-message">Cargando informe meteorológico...</p>
+            <button onclick="dismissModal('loading-modal')">OK</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
