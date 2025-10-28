@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Acarate | Portafolio Fundamentos Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="show-animate"> 
+
+    <header class="header">
+        <a href="#" class="logo">Ethan Acarate</a>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#portafolio">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h3>¡Hola, mi nombre es!</h3>
+            <h1>Ethan Nacarate</h1>
+            <h3>Y soy un <span class="texto-animado">Desarrollador Web</span></h3>
+            <p>Este es mi portafolio de progreso para el curso "Fundamentos Web 4C". Aquí documento mi aprendizaje semanal.</p>
+            
+            <div class="social-media">
+                <a href="https://github.com/ethannacarate/fundamentos-web-4c" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <a href="#portafolio" class="btn">Ver Proyectos</a>
+        </div>
+
+        <div class="inicio-img">
+            <img src="recursos/img/images.jfif" alt="Foto de Perfil de Ethan Acarate"> 
+        </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="heading">Sobre <span>Mí</span></h2>
+        
+        <div class="sobre-mi-contenido">
+            <h3>Mi Trayectoria Académica</h3>
+            <p>Soy un estudiante enfocado en el desarrollo web, actualmente cursando "Fundamentos Web 4C".</p>
+            <p>Este portafolio sirve como bitácora visual de mi avance, mostrando los ejercicios y proyectos que he completado desde la Semana 1 hasta la Semana 30, aplicando conceptos de HTML, CSS y JavaScript.</p>
+        </div>
+
+        <div class="sobre-mi-contenido">
+            <h3>Repositorio del Curso</h3>
+            <p>Todo el código fuente de los proyectos semanales está disponible públicamente en mi repositorio de GitHub.</p>
+            <a href="https://github.com/ethannacarate/fundamentos-web-4c" class="btn" target="_blank">Ver Repositorio</a>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="heading">Mis <span>Habilidades</span></h2>
+        
+        <div class="habilidades-contenedor">
+            <div class="habilidad-box" style="--i:1">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Estructura semántica, formularios y organización de contenido web.</p>
+            </div>
+
+            <div class="habilidad-box" style="--i:2">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3 y Responsividad</h3>
+                <p>Diseño, maquetación con Flexbox/Grid, y adaptabilidad a móviles (Media Queries).</p>
+            </div>
+
+            <div class="habilidad-box" style="--i:3">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Manipulación del DOM, eventos, y lógica de programación para interactividad.</p>
+            </div>
+            
+            <div class="habilidad-box" style="--i:4">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+                <p>Control de versiones y manejo de repositorios para el seguimiento de proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portafolio" id="portafolio">
+        <h2 class="heading">Proyectos <span>Semanales</span></h2>
+        
+        <div class="portafolio-contenedor">
+            
+            <div class="portafolio-box" style="--i:1">
+                <img src="img/s2.jpg" alt="Proyecto Semana 2"> 
+                <div class="portafolio-capa">
+                    <h4>Semana 2: Estructura Básica</h4>
+                    <p>Ejercicio inicial de HTML y CSS.</p>
+                    <a href="https://github.com/ethannacarate/fundamentos-web-4c/tree/main/S2" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="portafolio-box" style="--i:2">
+                 <img src="img/s11.jpg" alt="Proyecto Semana 11">
+                <div class="portafolio-capa">
+                    <h4>Semana 11: Proyecto con JS</h4>
+                    <p>Aplicación de lógica de JavaScript y manipulación del DOM.</p>
+                    <a href="https://github.com/ethannacarate/fundamentos-web-4c/tree/main/S11" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portafolio-box" style="--i:3">
+                 <img src="img/s20.jpg" alt="Proyecto Semana 20">
+                <div class="portafolio-capa">
+                    <h4>Semana 20: Diseño Responsivo</h4>
+                    <p>Implementación de Media Queries y diseño adaptativo.</p>
+                    <a href="https://github.com/ethannacarate/fundamentos-web-4c/tree/main/S20" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+             <div class="portafolio-box" style="--i:4">
+                 <img src="img/s30.jpg" alt="Proyecto Semana 30">
+                <div class="portafolio-capa">
+                    <h4>Semana 30: Proyecto Final</h4>
+                    <p>Proyecto de integración de Fundamentos Web.</p>
+                    <a href="https://github.com/ethannacarate/fundamentos-web-4c/tree/main/S30" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Contacta <span>Conmigo</span></h2>
+        
+        <form action="#"> <div class="input-caja">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-caja">
+                <input type="text" placeholder="Número de Teléfono" required>
+                <input type="text" placeholder="Asunto del Mensaje" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-texto">
+            <p>Portafolio de Ethan Acarate | Fundamentos Web 4C</p>
+        </div>
+        <div class="footer-icon-top">
+            <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

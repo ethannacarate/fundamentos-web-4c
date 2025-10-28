@@ -1,0 +1,553 @@
+/* Importa una fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Variables CSS para facilitar la edición de colores */
+:root {
+    --color-principal: #00bcd4; /* Cian vibrante (efecto 'glow') */
+    --color-secundario: #1f2a40; /* Azul oscuro (para el fondo de cajas) */
+    --color-fondo: #0a101f; /* Fondo muy oscuro */
+    --color-texto: #ededed;
+    --color-claro: #ffffff;
+    --transicion-base: .5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out; /* Transiciones suaves para todos los elementos */
+}
+
+body {
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* ---------------------------------------------------- */
+/* CABECERA Y NAVEGACIÓN */
+/* ---------------------------------------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.7rem;
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: var(--color-texto);
+    font-weight: 500;
+    margin-left: 3rem;
+    transition: var(--transicion-base);
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--color-principal);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: var(--color-texto);
+    cursor: pointer;
+    display: none; 
+}
+
+/* ---------------------------------------------------- */
+/* ESTILOS DE BOTONES Y GENERALES */
+/* ---------------------------------------------------- */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--color-principal);
+    border-radius: .4rem;
+    /* Sombra con efecto 'glow' */
+    box-shadow: 0 0 1.5rem var(--color-principal); 
+    font-size: 1rem;
+    color: var(--color-secundario);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: var(--transicion-base);
+}
+
+.btn:hover {
+    box-shadow: 0 0 2.5rem var(--color-principal); /* Más brillante al hover */
+    transform: scale(1.05);
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: var(--color-principal);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* ---------------------------------------------------- */
+/* SECCIÓN INICIO */
+/* ---------------------------------------------------- */
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-contenido h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.inicio-contenido h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.inicio-contenido h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.texto-animado {
+    color: var(--color-principal);
+}
+
+.inicio-img img {
+    width: 25vw; 
+    height: 25vw; /* Asegura que sea un círculo perfecto */
+    object-fit: cover; /* Evita que la imagen se distorsione */
+    border-radius: 50%;
+    /* Sombra con efecto 'glow' */
+    box-shadow: 0 0 2.5rem var(--color-principal); 
+    transition: all 0.5s;
+}
+
+.inicio-img img:hover {
+    box-shadow: 0 0 3.5rem var(--color-principal);
+}
+
+/* Redes Sociales */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .1rem solid var(--color-principal);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--color-principal);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: var(--transicion-base);
+}
+
+.social-media a:hover {
+    background: var(--color-principal);
+    color: var(--color-secundario);
+    box-shadow: 0 0 1rem var(--color-principal);
+}
+
+
+/* ---------------------------------------------------- */
+/* SECCIÓN SOBRE MÍ */
+/* ---------------------------------------------------- */
+.sobre-mi {
+    background: var(--color-secundario);
+}
+
+.sobre-mi-contenido {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 1rem;
+    border-left: 4px solid var(--color-principal);
+    padding-left: 20px;
+}
+
+.sobre-mi-contenido h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi-contenido p, .sobre-mi-contenido ul {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.sobre-mi-contenido ul {
+    list-style: none;
+}
+
+.sobre-mi .btn {
+    margin-top: 1rem;
+}
+
+/* ---------------------------------------------------- */
+/* SECCIÓN HABILIDADES */
+/* ---------------------------------------------------- */
+.habilidades-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 2rem;
+}
+
+.habilidad-box {
+    flex: 1 1 18rem; 
+    background: var(--color-secundario);
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: .1rem solid var(--color-secundario);
+    transition: var(--transicion-base);
+}
+
+.habilidad-box:hover {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 1rem var(--color-principal);
+    transform: scale(1.05);
+}
+
+.habilidad-box i {
+    font-size: 3.5rem;
+    color: var(--color-principal);
+}
+
+.habilidad-box h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.habilidad-box p {
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+/* ---------------------------------------------------- */
+/* SECCIÓN EXPERIENCIA (TIMELINE) - Eliminada en esta versión */
+/* ---------------------------------------------------- */
+
+
+/* ---------------------------------------------------- */
+/* SECCIÓN PORTAFOLIO */
+/* ---------------------------------------------------- */
+.portafolio-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2.5rem;
+}
+
+.portafolio-box {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--color-secundario);
+    overflow: hidden;
+    display: flex;
+}
+
+.portafolio-box img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes del portafolio */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    transition: var(--transicion-base);
+}
+
+.portafolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portafolio-capa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    transform: translateY(100%);
+    transition: var(--transicion-base);
+}
+
+.portafolio-box:hover .portafolio-capa {
+    transform: translateY(0);
+}
+
+.portafolio-capa h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portafolio-capa p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.portafolio-capa a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--color-claro);
+    border-radius: 50%;
+}
+
+.portafolio-capa a i {
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+}
+
+/* ---------------------------------------------------- */
+/* SECCIÓN CONTACTO */
+/* ---------------------------------------------------- */
+.contacto {
+    background: var(--color-secundario);
+}
+
+.contacto form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto form .input-caja {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-caja input,
+.contacto form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: var(--color-texto);
+    background: var(--color-fondo);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contacto form .input-caja input {
+    width: 49%;
+}
+
+.contacto form textarea {
+    resize: none;
+}
+
+.contacto form .btn {
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+/* PIE DE PÁGINA (FOOTER) */
+/* ---------------------------------------------------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--color-secundario);
+}
+
+.footer-texto p {
+    font-size: 1rem;
+}
+
+.footer-icon-top a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--color-principal);
+    border-radius: .8rem;
+    transition: var(--transicion-base);
+}
+
+.footer-icon-top a:hover {
+    box-shadow: 0 0 1rem var(--color-principal);
+}
+
+.footer-icon-top a i {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+
+
+/* ---------------------------------------------------- */
+/* ANIMACIONES (CLAVE PARA EL LOOK "BONITO") */
+/* ---------------------------------------------------- */
+
+/* Estado inicial: oculto o fuera de posición */
+.show-animate .inicio,
+.show-animate .sobre-mi,
+.show-animate .habilidades,
+.show-animate .portafolio,
+.show-animate .contacto,
+.show-animate .footer-icon-top,
+.show-animate .header { /* Incluimos el header */
+    opacity: 0;
+    transform: translateY(100px); /* Los elementos vienen de abajo */
+    transition: all 0.7s ease-out;
+}
+
+/* Estado final: visible y en posición */
+.inicio.animate,
+.sobre-mi.animate,
+.habilidades.animate,
+.portafolio.animate,
+.contacto.animate,
+.footer.animate .footer-icon-top {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* El header siempre está visible, pero lo animamos al inicio para que baje */
+.header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Animación para las habilidades (Retraso) */
+.show-animate .habilidades-contenedor .habilidad-box {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.habilidades.animate .habilidad-box {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: calc(0.2s * var(--i)); /* Usa la variable --i del HTML */
+}
+
+/* Animación para Portafolio (Retraso) */
+.show-animate .portafolio-contenedor .portafolio-box {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.7s ease-in-out;
+}
+
+.portafolio.animate .portafolio-box {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: calc(0.2s * var(--i)); /* Usa la variable --i del HTML */
+}
+
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERIES PARA RESPONSIVIDAD */
+/* ---------------------------------------------------- */
+
+/* Pantallas de tabletas grandes (aprox. 1200px) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 88%; 
+    }
+}
+
+/* Pantallas de tabletas y móviles (aprox. 991px) */
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+/* Pantallas de tabletas pequeñas (aprox. 768px) */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Mostrar el icono de menú */
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--color-secundario);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none; /* Ocultar por defecto */
+    }
+
+    .navbar.active {
+        display: block; /* Mostrar cuando esté activo */
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .inicio {
+        flex-direction: column-reverse; /* Imagen arriba en móvil */
+        text-align: center;
+    }
+
+    .inicio-contenido h1 {
+        font-size: 3rem;
+    }
+
+    .inicio-img img {
+        width: 70vw; /* Imagen más grande en móvil */
+        height: 70vw; /* Asegura el círculo */
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-mi-contenido {
+        padding-left: 0;
+        border-left: none;
+        border-top: 4px solid var(--color-principal);
+        padding-top: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .contacto form .input-caja input {
+        width: 100%;
+    }
+}
