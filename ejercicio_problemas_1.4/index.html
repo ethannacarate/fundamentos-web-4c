@@ -1,17 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificar Usuario y Evaluar Temperatura</title>
-    <script src="script.js" defer></script>
+    <title>Tu Nombre | Portafolio CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <h1>Verificación de Usuario y Evaluación de Temperatura</h1>
-    <!-- Botón para verificar al usuario -->
-    <button onclick="verificarUsuario()">Verificar Usuario</button>
-    <br><br>
-    <!-- Botón para evaluar directamente la temperatura -->
-    <button onclick="temperatura()">Evaluar Temperatura</button>
+<body class="show-animate"> 
+
+    <header class="header">
+        <a href="#" class="logo">Tu Nombre</a>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h3>¡Hola, mi nombre es!</h3>
+            <h1>Tu Nombre Completo</h1>
+            <h3>Y soy un <span class="texto-animado">Desarrollador Web</span></h3>
+            <p>Escribe aquí una breve descripción impactante sobre tu perfil profesional y lo que ofreces. ¡Sé conciso y directo!</p>
+            
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <a href="#" class="btn">Descargar CV</a>
+        </div>
+
+        <div class="inicio-img">
+            <img src="ruta/a/tu/imagen.jpg" alt="Tu Foto de Perfil"> 
+        </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="heading">Sobre <span>Mí</span></h2>
+        
+        <div class="sobre-mi-contenido">
+            <h3>Mi Historia</h3>
+            <p>Aquí puedes expandir tu historia profesional, tus motivaciones, y tu filosofía de trabajo. ¡Muestra tu personalidad!</p>
+            <p>Detalla tus años de experiencia, tu enfoque principal (por ejemplo, desarrollo frontend con React y diseño UI/UX), y qué tipo de proyectos te entusiasman más.</p>
+        </div>
+
+        <div class="sobre-mi-contenido">
+            <h3>Datos Clave</h3>
+            <ul>
+                <li>**Nombre:** Tu Nombre Completo</li>
+                <li>**Email:** tu.email@ejemplo.com</li>
+                <li>**Ubicación:** Ciudad, País</li>
+                <li>**Especialización:** Desarrollo Full Stack / Frontend / Backend</li>
+            </ul>
+            <a href="#contacto" class="btn">Contratame</a>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="heading">Mis <span>Habilidades</span></h2>
+        
+        <div class="habilidades-contenedor">
+            <div class="habilidad-box" style="--i:1">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Manejo avanzado en la estructura semántica y accesible de documentos web.</p>
+            </div>
+
+            <div class="habilidad-box" style="--i:2">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3 y Responsividad</h3>
+                <p>Experiencia en diseños modernos con Grid, Flexbox, SASS y Media Queries para web totalmente responsivas.</p>
+            </div>
+
+            <div class="habilidad-box" style="--i:3">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Fuerte manejo en lógica frontend, manipulación del DOM y librerías modernas como React.</p>
+            </div>
+
+            <div class="habilidad-box" style="--i:4">
+                <i class="fas fa-code"></i>
+                <h3>Java / Backend</h3>
+                <p>Dominio en la implementación de lógica de negocio y APIs robustas con Java (Spring Boot).</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="experiencia" id="experiencia">
+        <h2 class="heading">Mi <span>Experiencia</span></h2>
+        
+        <div class="timeline-contenedor">
+            <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-fecha">2023 - Actualidad</div>
+                <h3>Desarrollador Senior en [Nombre de la Empresa]</h3>
+                <p>Responsable del diseño e implementación de nuevas funcionalidades utilizando Java y Spring Boot. Liderazgo en la migración a arquitectura de microservicios. Logro: Reducción del tiempo de respuesta del API en un 30%.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-fecha">2020 - 2023</div>
+                <h3>Especialista Frontend en [Otra Empresa]</h3>
+                <p>Desarrollo y optimización de interfaces de usuario con HTML, CSS (SASS) y React. Asegurando la completa responsividad y accesibilidad (WCAG). Logro: Mejora del score de rendimiento web en Google Lighthouse de 60 a 95.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-fecha">2016 - 2020</div>
+                <h3>Grado en Ingeniería Informática</h3>
+                <p>Universidad de Ejemplo. Énfasis en Desarrollo de Software y Bases de Datos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+        <h2 class="heading">Últimos <span>Proyectos</span></h2>
+        
+        <div class="portafolio-contenedor">
+            <div class="portafolio-box" style="--i:1">
+                <img src="ruta/a/proyecto1.jpg" alt="Proyecto 1"> 
+                <div class="portafolio-capa">
+                    <h4>Diseño de E-commerce</h4>
+                    <p>Plataforma de comercio electrónico construida con React, Spring Boot y MySQL. Diseño responsivo completo.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="portafolio-box" style="--i:2">
+                 <img src="ruta/a/proyecto2.jpg" alt="Proyecto 2">
+                <div class="portafolio-capa">
+                    <h4>Sistema de Gestión Java</h4>
+                    <p>Aplicación de gestión interna desarrollada enteramente con Java EE. Enfoque en la robustez y escalabilidad.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Contacta <span>Conmigo</span></h2>
+        
+        <form action="#"> <div class="input-caja">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-caja">
+                <input type="text" placeholder="Número de Teléfono" required>
+                <input type="text" placeholder="Asunto del Mensaje" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-texto">
+            <p>Derechos de Autor &copy; 2025 por Tu Nombre | Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-icon-top">
+            <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    </script>
 </body>
 </html>
